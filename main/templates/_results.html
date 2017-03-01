@@ -1,0 +1,26 @@
+<div class="full-table">
+  <table>
+      <thead>
+        <tr>
+          <th>Town</th>
+          <th>Town Budget</th>
+          <th>School Budget</th>
+          <th>Source</th>
+        </tr>
+      </thead>
+      {% for result in results %}
+        <tr>
+          <td data-title="Town">{{result.Town}}</td>
+          <td data-title="Town Budget">{{result.Town_Budget}}</td>
+          <td data-title="School Budget">{{result.School_Budget}}</td>
+          <td data-title="Source">{{result.Source}}</td>
+        </tr>
+      {% endfor %}
+  </table>
+</div>
+
+
+<script type="text/javascript" src="https://pym.nprapps.org/pym.v1.min.js"></script>
+<script>
+    var pymChild = new pym.Child();
+</script>
