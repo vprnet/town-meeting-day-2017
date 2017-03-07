@@ -8,7 +8,7 @@
 
     table {
         font-family: 'Lato', sans-serif;
-        font-size: 14px;
+        font-size: 12px;
         border-collapse: collapse;
         margin: 0 0 11px 0;
         width: 100%;
@@ -19,7 +19,7 @@
     }
 
     table th {
-        font-size: 16px;
+        font-size: 14px;
         text-align: left;
         border-bottom: 2px solid #eee;
         vertical-align: bottom;
