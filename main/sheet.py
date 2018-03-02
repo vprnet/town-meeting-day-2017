@@ -7,7 +7,7 @@ def get_google_sheet():
     scope = ['https://spreadsheets.google.com/feeds']
     credentials = SignedJwtAssertionCredentials(json_key['client_email'], json_key['private_key'], scope)
     authorization = gspread.authorize(credentials)
-    spreadsheet = authorization.open('Town Meeting Day 2017 Results')
-    worksheet = spreadsheet.get_worksheet(0)
+    spreadsheet = authorization.open('Town Meeting Day Results')
+    worksheet = spreadsheet.get_worksheet(1)
 
     return worksheet.get_all_records()
